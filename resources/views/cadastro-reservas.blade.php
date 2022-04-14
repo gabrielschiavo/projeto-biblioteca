@@ -36,10 +36,20 @@
             <label for="formTitulo" class="form-label">Pessoa</label>
             <input class="form-control" type="text" id="pessoa" name="pessoa" value="{{isset($pessoas)}}" placeholder="Digite a Pessoa que Reservou">{{isset($pessoas)}}
         </div>
-        <div class="mb-3">
+        <div class="mb-5">
             <label for="formTitulo" class="form-label">Livro</label>
             <input class="form-control" type="text" id="livro" name="livro" value="{{isset($livros)}}" placeholder="Digite o Livro reservado">{{isset($livros)}}
         </div>
+        {{-- <div class="mb-5">
+            <label for="formTitulo" class="form-label">Selecione o status do livro</label>
+            <select class="form-select" id="status" name="status" aria-label="Default select example">
+                <option selected>...</option>
+                <option value="Retirado">Retirado</option>
+                <option value="Devolvido">Devolvido</option>
+                <option value="Atrasado">Atrasado</option>
+                <option value="Renovado">Renovado</option>
+            </select>
+        </div> --}}
         
         <div class="col-md-12">
             <button type="submit" class="btn btn-primary">Salvar</button>
