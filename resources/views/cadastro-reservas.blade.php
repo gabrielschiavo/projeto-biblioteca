@@ -21,7 +21,7 @@
         <input type="hidden" name="id" value="{{isset($reservas) ? $reservas->id : old('id')}}" />
 
         <div class="mt-4 mb-3">
-            <label for="formTitulo" class="form-label">Código</label>
+            <label for="formTitulo" class="form-label">Código Reserva</label>
             <input class="form-control" type="number" id="codigo" name="codigo" value="{{isset($reservas) ? $reservas->codigo : old('codigo')}}"  placeholder="Digite o código da Reserva">
         </div>
         <div class="mb-3">
