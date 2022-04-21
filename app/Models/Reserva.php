@@ -10,7 +10,7 @@ class Reserva extends Model
 
     protected $table = 'reservas';
 
-    protected $fillable = ['codigo', 'dataRetirada', 'dataDevolucao', 'pessoa', 'livro'];
+    protected $fillable = ['codigo', 'dataRetirada', 'dataDevolucao', 'pessoa', 'livro', 'status'];
 
     public $timestamps = false;
 }

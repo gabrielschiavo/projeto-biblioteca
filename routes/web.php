@@ -45,4 +45,5 @@ Route::get('/lista-reservas', [ReservaController::class, 'listaReservas']);
 Route::get('/lista-reservas/cadastro-reservas', [ReservaController::class, 'cadastroReservas']);
 Route::post('/lista-reservas/cadastro-reservas', [ReservaController::class, 'salvarReservas']);
 
+Route::get('/lista-reservas/{id}/editar', [ReservaController::class, 'editar']);
 Route::delete('/lista-reservas/{id}/excluir', [ReservaController::class, 'excluir']);

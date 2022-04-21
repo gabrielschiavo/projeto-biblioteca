@@ -20,7 +20,7 @@
 
         <input type="hidden" name="id" value="{{isset($livros)}}" />
 
-        <div class="mb-3">
+        <div class="mt-4 mb-3">
             <label for="formTitulo" class="form-label">Código do Gênero</label>
             <input class="form-control" type="number" id="codigoGenero" name="codigoGenero" value="{{isset($genero)}}" placeholder="Digite o código do Gênero">
         </div>
@@ -37,7 +37,7 @@
             <textarea class="form-control" type="text" id="formDescricao" name="descricao" placeholder="Digite a descrição do Livro">{{isset($genero)}}</textarea>
         </div>
 
-        <div class="mb-5">
+        <div class="mb-4">
             <label for="imgCapa" class="form-label">Escolha a imagem da capa:</label>
             <input class="form-control" type="file" name="imgCapa" id="imgCapa">
         </div>

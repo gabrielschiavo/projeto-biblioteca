@@ -26,6 +26,15 @@ class ReservaController extends Controller
         return view('cadastro-reservas');
     }
 
+    public function editar(Request $request)
+    {
+        $reservas = Reserva::find($request->id);
+
+        return view('cadastro-reservas', [
+            "reservas" => $reservas
+        ]);
+    }
+
     public function excluir(Request $request)
     {
         $reservas = Reserva::find($request->id);
@@ -40,10 +49,11 @@ class ReservaController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'codigo' => 'required|min:1|max:20',
-            'dataRetirada' => 'required|min:1|max:100',
+            'dataRetirada' => 'required|min:1|max:250',
             'dataDevolucao' => 'required|min:1|max:250',
-            'pessoa' => 'required|min:1|max:15',
-            'livro' => 'required|min:1|max:100',
+            'pessoa' => 'required|min:1|max:250',
+            'livro' => 'required|min:1|max:250',
+            'status' => 'required|min:1|max:10',
         ], [
             'required' => 'O campo :attribute é obrigatório',
             'min' => 'O campo :attribute precisa ter no mínimo :min caracteres',
@@ -59,8 +69,9 @@ class ReservaController extends Controller
             $reserva->codigo = $request->codigo;
             $reserva->dataRetirada = $request->dataRetirada;
             $reserva->dataDevolucao = $request->dataDevolucao;
-            $reserva->codigo = $request->codigo;
-            $reserva->codigo = $request->codigo;
+            $reserva->pessoa = $request->pessoa;
+            $reserva->livro = $request->livro;
+            $reserva->status = $request->status;
             $reserva->save();
 
             $request->session()->put('mensagem', "Reserva {$reserva->id} atualizada!");
@@ -71,6 +82,7 @@ class ReservaController extends Controller
                 'dataDevolucao' => $request->dataDevolucao,
                 'pessoa' => $request->pessoa,
                 'livro' => $request->livro,
+                'status' => $request->status,
             ]);
 
             $request->session()->put('mensagem', "Reserva {$reserva->id} criada!");

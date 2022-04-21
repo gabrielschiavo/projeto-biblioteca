@@ -43,8 +43,9 @@ class LivrosController extends Controller
         $validator = Validator::make($request->all(), [
             'codigoGenero' => 'required|min:1|max:20',
             'codigoLivro' => 'required|min:1|max:20',
-            'titulo' => 'required|min:1|max:55',
-            'descricao' => 'required'
+            'titulo' => 'required|min:1|max:250',
+            'descricao' => 'required|min:1|max:250',
+            'imgCapa' => 'required'
         ], [
             'required' => 'O campo :attribute é obrigatório',
             'min' => 'O campo :attribute precisa ter no mínimo :min caracteres',

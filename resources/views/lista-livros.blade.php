@@ -36,7 +36,7 @@
                         <form action="/lista-livros/{{$livros->id}}/excluir" method="POST" onsubmit="return confirm('Deseja excluir?')" class="d-grid gap-2 d-md-flex justify-content-md-end">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">
+                            <button type="submit" class="btn btn-danger" title="Excluir">
                                 <i class="bi bi-trash"></i>
                             </button>
                         </form>

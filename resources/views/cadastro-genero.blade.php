@@ -20,11 +20,11 @@
 
         <input type="hidden" name="id" value="{{isset($genero)}}" />
         
-        <div class="mb-3">
+        <div class="mt-4 mb-3">
             <label for="formTitulo" class="form-label">Código do gênero</label>
             <input class="form-control" type="number" id="formTitulo" name="codigo" value="{{isset($genero)}}" placeholder="Digite o código do Gênero">
         </div>
-        <div class="mb-3">
+        <div class="mb-4">
             <label for="formDescricao" class="form-label">Descrição do gênero</label>
             <textarea class="form-control" type="text" id="formDescricao" name="descricao" placeholder="Digite a descrição do Gênero">{{isset($genero)}}</textarea>
         </div>

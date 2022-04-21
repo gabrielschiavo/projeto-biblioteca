@@ -19,6 +19,7 @@
                 <th scope="col">Data da Devolução</th>
                 <th scope="col">Pessoa</th>
                 <th scope="col">Livro</th>
+                <th scope="col">Status</th>
                 <th scope="col"></th>
             </tr>
         </thead>
@@ -27,16 +28,20 @@
                 <tr class="align-middle">
                     <td>{{ $reserva->id }}</td>
                     <td>{{ $reserva->codigo }}</td>
-                    <td>{{ $reserva->dataRetirada }}</td>
-                    <td>{{ $reserva->dataDevolucao }}</td>
+                    <td>{{ \Carbon\Carbon::parse($reserva->dataRetirada)->format('d/m/Y') }}</td>
+                    <td>{{ \Carbon\Carbon::parse($reserva->dataDevolucao)->format('d/m/Y') }}</td>
                     <td>{{ $reserva->pessoa }}</td>
                     <td>{{ $reserva->livro }}</td>
+                    <td><strong>{{ $reserva->status }}</strong></td>
                     <td  class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="{{url("/lista-reservas/{$reserva->id}/editar")}}" class="btn btn-primary" title="Editar">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
 
                         <form action="/lista-reservas/{{$reserva->id}}/excluir" method="POST" onsubmit="return confirm('Deseja excluir?')">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">
+                            <button type="submit" class="btn btn-danger" title="Excluir">
                                 <i class="bi bi-trash"></i>
                             </button>
                         </form>

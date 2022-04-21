@@ -36,7 +36,7 @@
                         <form action="/lista-pessoas/{{$pessoas->id}}/excluir" method="POST" onsubmit="return confirm('Deseja excluir?')">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">
+                            <button type="submit" class="btn btn-danger" title="Excluir">
                                 <i class="bi bi-trash"></i>
                             </button>
                         </form>

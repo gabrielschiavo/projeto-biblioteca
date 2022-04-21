@@ -20,7 +20,7 @@
 
         <input type="hidden" name="id" value="{{isset($pessoas)}}" />
 
-        <div class="mb-3">
+        <div class="mt-4 mb-3">
             <label for="formTitulo" class="form-label">Código</label>
             <input class="form-control" type="number" id="codigo" name="codigo" value="{{isset($pessoas)}}" placeholder="Digite o código da Pessoa">
         </div>
@@ -36,7 +36,7 @@
             <label for="formTitulo" class="form-label">Telefone</label>
             <input class="form-control" type="text" id="telefone" name="telefone" value="{{isset($pessoas)}}" placeholder="Digite o telefone da Pessoa">
         </div>
-        <div class="mb-3">
+        <div class="mb-4">
             <label for="formTitulo" class="form-label">Email</label>
             <input class="form-control" type="text" id="email" name="email" value="{{isset($pessoas)}}" placeholder="Digite o email da Pessoa">
         </div>

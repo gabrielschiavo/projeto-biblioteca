@@ -41,7 +41,7 @@ class GeneroController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'codigo' => 'required|min:1|max:20',
-            'descricao' => 'required'
+            'descricao' => 'required|min:1|max:250'
         ], [
             'required' => 'O campo :attribute é obrigatório',
             'min' => 'O campo :attribute precisa ter no mínimo :min caracteres',

@@ -14,6 +14,7 @@ return new class extends Migration
             $table->date('dataDevolucao');
             $table->string('pessoa', 250);
             $table->string('livro', 250);
+            $table->string('status', 10);
         });
     }
 
