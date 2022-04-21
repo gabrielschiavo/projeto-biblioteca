@@ -21,7 +21,7 @@
         <input type="hidden" name="id" value="{{isset($pessoas)}}" />
 
         <div class="mt-4 mb-3">
-            <label for="formTitulo" class="form-label">Código</label>
+            <label for="formTitulo" class="form-label">Código Pessoa</label>
             <input class="form-control" type="number" id="codigo" name="codigo" value="{{isset($pessoas)}}" placeholder="Digite o código da Pessoa">
         </div>
         <div class="mb-3">
