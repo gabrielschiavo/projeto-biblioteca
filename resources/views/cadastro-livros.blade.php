@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('titulo')
-    <a class="navbar-brand" href="/lista-livros/cadastro-livros"><strong>Cadastro de Livros</strong></a>
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 pt-3 pb-3" href="/lista-livros/cadastro-livros">Cadastro de Livros</a>
 @endsection
 
 @section('conteudo')
@@ -45,6 +45,8 @@
         <div class="col-md-12">
             <button type="submit" class="btn btn-primary">Salvar</button>
             <a type="button" class="btn btn-secondary" href="/lista-livros">Cancelar</a>
+            
+            <br><br><br><br><br><br>
         </div>
     </form>  
 @endsection

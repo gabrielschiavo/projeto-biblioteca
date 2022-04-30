@@ -8,7 +8,7 @@
 
         <!-- Estilo personalizado -->
         <link rel="stylesheet" href="/css/estilo.css">
-        
+
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -19,59 +19,104 @@
         <title>Projeto Biblioteca</title>
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    @yield('titulo')
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
+        <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
+            @yield('titulo')         
+            <button id="btn-mobile" class="navbar-toggler position-absolute d-md-none collapsed mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+               <span id="hamburger"></span>
+            </button>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav id="sidebarMenu" class="col-md-3 col-lg-2 bg-light d-md-block sidebar collapse">
+                    <div class="position-sticky">
+                        <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/home">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Listas
+                                <a class="nav-link  " aria-current="page" href="/home">
+                                    <img class="feather" src="/img/icons/icon_home.svg" alt="">
+                                    Home
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="/lista-genero">Lista Gêneros</a></li>
-                                    <li><a class="dropdown-item" href="/lista-livros">Lista Livros</a></li>
-                                    <li><a class="dropdown-item" href="/lista-pessoas">Lista Pessoas</a></li>
-                                    <li><a class="dropdown-item" href="/lista-reservas">Lista Retiradas/Devolucao</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Cadastros
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="/lista-genero/cadastro-genero">Cadastro Gêneros</a></li>
-                                    <li><a class="dropdown-item" href="/lista-livros/cadastro-livros">Cadastro Livros</a></li>
-                                    <li><a class="dropdown-item" href="/lista-pessoas/cadastro-pessoas">Cadastro Pessoas</a></li>
-                                    <li><a class="dropdown-item" href="/lista-reservas/cadastro-reservas">Cadastro Retiradas/Devoluçaões</a></li>
-                                </ul>
                             </li>
                         </ul>
+
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 text-muted">
+                            Listas
+                        </h6>
+
+                        <ul class="nav flex-column">
+                           <li class="nav-item">
+                               <a class="nav-link  " aria-current="page" href="/lista-genero">
+                                  <img class="feather" src="/img/icons/icon_list_genero.svg" alt="">
+                                  Lista Gêneros
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link  " aria-current="page" href="/lista-livros">
+                                  <img class="feather" src="/img/icons/icon_list_livros.svg" alt="">
+                                  Lista Livros
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link  " aria-current="page" href="/lista-pessoas">
+                                  <img class="feather" src="/img/icons/icon_list_pessoas.svg" alt="">
+                                  Lista Pessoas
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link  " aria-current="page" href="/lista-reservas">
+                                  <img class="feather" src="/img/icons/icon_list_date.svg" alt="">
+                                  Lista Retiradas/Devolucao
+                               </a>
+                           </li>
+                        </ul>
+
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 text-muted">
+                           Cadastros
+                        </h6>
+
+                        <ul class="nav flex-column">
+                           <li class="nav-item">
+                               <a class="nav-link  " aria-current="page" href="/lista-genero/cadastro-genero">
+                                  <img class="feather" src="/img/icons/icon_cad_genero.svg" alt="">
+                                  Cadastro Gêneros
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link  " aria-current="page" href="/lista-livros/cadastro-livros">
+                                  <img class="feather" src="/img/icons/icon_cad_livros.svg" alt="">
+                                  Cadastro Livros
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link  " aria-current="page" href="/lista-pessoas/cadastro-pessoas">
+                                  <img class="feather" src="/img/icons/icon_cad_pessoas.svg" alt="">
+                                  Cadastro Pessoas
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link  " aria-current="page" href="/lista-reservas/cadastro-reservas">
+                                  <img class="feather" src="/img/icons/icon_cad_date.svg" alt="">
+                                  Cadastro Retiradas/Devoluçaões
+                               </a>
+                           </li>
+                        </ul>
                     </div>
-                </div>
-            </nav>
-        </header>
-        
-        <div class="container">
+                    <p class="copyright uk-position-bottom-center" tabindex="0">2022 - FEMA</p>
+                </nav>
+            </div>
+        </div>
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <br>
             @yield('conteudo')
-        </div>
+        </main>
 
-        <footer class="mt-5 pt-5" style="position: relative; left: 0; bottom: 0; width: 100%;">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <footer class="bg-light" style="position: fixed; left: 0; bottom: 0; width: 100%;">
+            <ul class="nav justify-content-center pb-2 pt-2 col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <li class="nav-item me-5">Gabriel Kleinübing Schiavo</li>
                 <li class="nav-item me-5">Gabriel Meneghetti</li>
                 <li class="nav-item me-5">Lucas Werle</li>
                 <li class="nav-item">Pedro Henrique Loebens</li>
             </ul>
-            <p class="text-center text-muted">2022 Fundação Educacional Machado de Assis</p>
         </footer>
 
         <!-- Bootstrap JS -->

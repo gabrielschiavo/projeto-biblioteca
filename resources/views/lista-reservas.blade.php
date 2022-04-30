@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('titulo')
-    <a class="navbar-brand" href="/lista-pessoas"><strong>Lista Reservas</strong></a>
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 pt-3 pb-3" href="/lista-pessoas">Lista Reservas</a>
 @endsection
 
 @section('conteudo')  
@@ -34,16 +34,20 @@
                     <td>{{ $reserva->livro }}</td>
                     <td><strong>{{ $reserva->status }}</strong></td>
                     <td  class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="{{url("/lista-reservas/{$reserva->id}/editar")}}" class="btn btn-primary" title="Editar">
+                        {{-- <a href="{{url("/lista-reservas/{$reserva->id}/editar")}}" class="btn btn-primary" title="Editar">
                             <i class="bi bi-pencil-square"></i>
-                        </a>
+                        </a> --}}
 
                         <form action="/lista-reservas/{{$reserva->id}}/excluir" method="POST" onsubmit="return confirm('Deseja excluir?')">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger" title="Excluir">
-                                <i class="bi bi-trash"></i>
+                            <button class="btn btn-secondary d-md-flex justify-content-md-end" type="button" data-bs-toggle="dropdown" aria-expanded="false" tabindex="0" title="Editar/Excluir">
+                                <img src="/img/icons/icon_menu.svg" alt="" srcset="">
                             </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a href="{{url("/lista-reservas/{$reserva->id}/editar")}}" tabindex="0" class="editar" tabindex="0"  title="Editar"><img src="/img/icons/icon_editar.svg" alt="" class="me-2">Editar</a></li>
+                                <li><button type="submit" tabindex="0" class="excluir" tabindex="0"  title="Excluir"><img src="/img/icons/icon_excluir.svg" alt="" class="me-2">Excluir</button></li>
+                            </ul>
                         </form>
                         
                     </td>
