@@ -122,11 +122,14 @@ div#tabelaUsuarios table tbody tr td .btn{
    padding: 10px 12px;
 }
 
+.liEditar {
+   height: 34.5px;
+}
 .editar {
    background: transparent;
    border: none;
    font-size: 15px;
-   padding: 6px;
+   padding-left: 6px;
    color: #000000;
 }
 .editar:hover {
@@ -198,11 +201,11 @@ a.btn.btn-secondary{
    border-radius: 50px;
    background-color: transparent;
    color: #000000;
-   border-color: #95a5a6;
+   border-color: #7f8c8d;
 }
 a.btn.btn-secondary:hover{
    border-radius: 50px;
-   background-color: #95a5a6;
+   background-color: #7f8c8d;
    color: #ffffff;
    text-decoration: none;
 }

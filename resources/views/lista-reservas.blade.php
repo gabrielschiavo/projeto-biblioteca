@@ -45,7 +45,7 @@
                                 <img src="/img/icons/icon_menu.svg" alt="" srcset="">
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a href="{{url("/lista-reservas/{$reserva->id}/editar")}}" tabindex="0" class="editar" tabindex="0"  title="Editar"><img src="/img/icons/icon_editar.svg" alt="" class="me-2">Editar</a></li>
+                                <li class="liEditar"><a href="{{url("/lista-reservas/{$reserva->id}/editar")}}" tabindex="0" class="editar align-middle" tabindex="0"  title="Editar"><img src="/img/icons/icon_editar.svg" alt="" class="me-2">Editar</a></li>
                                 <li><button type="submit" tabindex="0" class="excluir" tabindex="0"  title="Excluir"><img src="/img/icons/icon_excluir.svg" alt="" class="me-2">Excluir</button></li>
                             </ul>
                         </form>
