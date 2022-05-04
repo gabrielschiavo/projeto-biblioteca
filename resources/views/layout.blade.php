@@ -32,7 +32,7 @@
                     <div class="position-sticky">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link  " aria-current="page" href="/home">
+                                <a class="nav-link @yield('liHome')" aria-current="page" href="/home">
                                     <img class="feather" src="/img/icons/icon_home.svg" alt="">
                                     Home
                                 </a>
@@ -45,25 +45,25 @@
 
                         <ul class="nav flex-column">
                            <li class="nav-item">
-                               <a class="nav-link  " aria-current="page" href="/lista-genero">
+                               <a class="nav-link @yield('liListGenero')" aria-current="page" href="/lista-genero">
                                   <img class="feather" src="/img/icons/icon_list_genero.svg" alt="">
                                   Lista Gêneros
                                </a>
                            </li>
                            <li class="nav-item">
-                               <a class="nav-link  " aria-current="page" href="/lista-livros">
+                               <a class="nav-link @yield('liListLivros')" aria-current="page" href="/lista-livros">
                                   <img class="feather" src="/img/icons/icon_list_livros.svg" alt="">
                                   Lista Livros
                                </a>
                            </li>
                            <li class="nav-item">
-                               <a class="nav-link  " aria-current="page" href="/lista-pessoas">
+                               <a class="nav-link @yield('liListPessoas')" aria-current="page" href="/lista-pessoas">
                                   <img class="feather" src="/img/icons/icon_list_pessoas.svg" alt="">
                                   Lista Pessoas
                                </a>
                            </li>
                            <li class="nav-item">
-                               <a class="nav-link  " aria-current="page" href="/lista-reservas">
+                               <a class="nav-link @yield('liListReservas')" aria-current="page" href="/lista-reservas">
                                   <img class="feather" src="/img/icons/icon_list_date.svg" alt="">
                                   Lista Retiradas/Devolucao
                                </a>
@@ -76,25 +76,25 @@
 
                         <ul class="nav flex-column">
                            <li class="nav-item">
-                               <a class="nav-link  " aria-current="page" href="/lista-genero/cadastro-genero">
+                               <a class="nav-link @yield('liCadGenero')" aria-current="page" href="/lista-genero/cadastro-genero">
                                   <img class="feather" src="/img/icons/icon_cad_genero.svg" alt="">
                                   Cadastro Gêneros
                                </a>
                            </li>
                            <li class="nav-item">
-                               <a class="nav-link  " aria-current="page" href="/lista-livros/cadastro-livros">
+                               <a class="nav-link @yield('liCadLivros')" aria-current="page" href="/lista-livros/cadastro-livros">
                                   <img class="feather" src="/img/icons/icon_cad_livros.svg" alt="">
                                   Cadastro Livros
                                </a>
                            </li>
                            <li class="nav-item">
-                               <a class="nav-link  " aria-current="page" href="/lista-pessoas/cadastro-pessoas">
+                               <a class="nav-link @yield('liCadPessoas')" aria-current="page" href="/lista-pessoas/cadastro-pessoas">
                                   <img class="feather" src="/img/icons/icon_cad_pessoas.svg" alt="">
                                   Cadastro Pessoas
                                </a>
                            </li>
                            <li class="nav-item">
-                               <a class="nav-link  " aria-current="page" href="/lista-reservas/cadastro-reservas">
+                               <a class="nav-link @yield('liCadResevas')" aria-current="page" href="/lista-reservas/cadastro-reservas">
                                   <img class="feather" src="/img/icons/icon_cad_date.svg" alt="">
                                   Cadastro Retiradas/Devoluçaões
                                </a>

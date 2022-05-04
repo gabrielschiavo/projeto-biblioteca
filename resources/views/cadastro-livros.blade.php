@@ -4,6 +4,10 @@
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 pt-3 pb-3" href="/lista-livros/cadastro-livros">Cadastro de Livros</a>
 @endsection
 
+@section('liCadLivros')
+    active
+@endsection
+
 @section('conteudo')
     @if (count($errors) > 0)
         <div class="alert alert-danger">
