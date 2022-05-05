@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('tituloGuia')
+    Lista Gêneros
+@endsection
+
 @section('titulo')
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 pt-3 pb-3" href="/lista-genero">Lista Gêneros</a>
 @endsection
@@ -21,7 +25,7 @@
                 <th scope="col">ID</th>
                 <th scope="col">Código</th>
                 <th scope="col">Descrição</th>
-                <th scope="col"></th>
+                <th class="text-end" scope="col">Excluir</th>
             </tr>
         </thead>
         <tbody>

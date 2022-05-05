@@ -1,7 +1,11 @@
 @extends('layout')
 
+@section('tituloGuia')
+    Cadastro Retiradas/Devoluçaões
+@endsection
+
 @section('titulo')
-    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 pt-3 pb-3" href="/lista-reservas/cadastro-reservas">Cadastro de Reservas</a>
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 pt-3 pb-3" href="/lista-reservas/cadastro-reservas">Cadastro Retiradas/Devoluçaões</a>
 @endsection
 
 @section('liCadResevas')
@@ -36,14 +40,27 @@
             <label for="formDescricao" class="form-label">Data de Devolução</label>
             <input class="form-control" type="date" id="dataDevolucao" name="dataDevolucao" value="{{isset($reservas) ? $reservas->dataDevolucao : old('dataDevolucao')}}" placeholder="Digite o dia da Devolução do Livro">
         </div>
-        <div class="mb-3">
+
+        <div class="mt-4 mb-3">
             <label for="formTitulo" class="form-label">Pessoa</label>
-            <input class="form-control" type="text" id="pessoa" name="pessoa" value="{{isset($reservas) ? $reservas->pessoa : old('pessoa')}}"  placeholder="Digite a Pessoa que Reservou">
+            <select class="form-select" aria-label="Default select example" id="pessoa" name="pessoa">
+                <option value="{{isset($reservas) ? $reservas->pessoa : old('pessoa')}}" selected>{{isset($reservas) ? $reservas->pessoa : old('pessoa')}}</option>
+                @foreach ($listaPessoas as $pessoas)            
+                    <option value="{{$pessoas->nome}}">{{$pessoas->nome}}</option>
+                @endforeach
+            </select>
         </div>
-        <div class="mb-3">
+
+        <div class="mt-4 mb-3">
             <label for="formTitulo" class="form-label">Livro</label>
-            <input class="form-control" type="text" id="livro" name="livro" value="{{isset($reservas) ? $reservas->livro : old('livro')}}"  placeholder="Digite o Livro reservado">
+            <select class="form-select" aria-label="Default select example" id="livro" name="livro">
+                <option value="{{isset($reservas) ? $reservas->livro : old('livro')}}" selected>{{isset($reservas) ? $reservas->livro : old('livro')}}</option>
+                @foreach ($listaLivros as $livros)            
+                    <option value="{{$livros->titulo}}">{{$livros->titulo}}</option>
+                @endforeach
+            </select>
         </div>
+        
         <div class="mb-4">
             <label for="formTitulo" class="form-label">Selecione o status do livro</label>
             <select class="form-select" id="status" name="status" aria-label="Default select example">

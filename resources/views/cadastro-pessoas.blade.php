@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('tituloGuia')
+    Cadastro de Pessoas
+@endsection
+
 @section('titulo')
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 pt-3 pb-3" href="/lista-pessoas/cadastro-pessoas">Cadastro de Pessoas</a>
 @endsection

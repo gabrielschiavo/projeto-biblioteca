@@ -1,7 +1,11 @@
 @extends('layout')
 
+@section('tituloGuia')
+    Lista Retiradas/Devoluçaões
+@endsection
+
 @section('titulo')
-    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 pt-3 pb-3" href="/lista-pessoas">Lista Reservas</a>
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 pt-3 pb-3" href="/lista-pessoas">Lista Retiradas/Devoluçaões</a>
 @endsection
 
 @section('liListReservas')
@@ -24,7 +28,7 @@
                 <th scope="col">Pessoa</th>
                 <th scope="col">Livro</th>
                 <th scope="col">Status</th>
-                <th scope="col"></th>
+                <th class="text-end" scope="col">Editar/Excluir</th>
             </tr>
         </thead>
         <tbody>

@@ -16,7 +16,7 @@
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
 
-        <title>Projeto Biblioteca</title>
+        <title>Projeto Biblioteca - @yield('tituloGuia')</title>
     </head>
     <body>
         <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
@@ -65,7 +65,7 @@
                            <li class="nav-item">
                                <a class="nav-link @yield('liListReservas')" aria-current="page" href="/lista-reservas">
                                   <img class="feather" src="/img/icons/icon_list_date.svg" alt="">
-                                  Lista Retiradas/Devolucao
+                                  Lista Retiradas/Devoluções
                                </a>
                            </li>
                         </ul>
@@ -96,7 +96,7 @@
                            <li class="nav-item">
                                <a class="nav-link @yield('liCadResevas')" aria-current="page" href="/lista-reservas/cadastro-reservas">
                                   <img class="feather" src="/img/icons/icon_cad_date.svg" alt="">
-                                  Cadastro Retiradas/Devoluçaões
+                                  Cadastro Retiradas/Devoluções
                                </a>
                            </li>
                         </ul>

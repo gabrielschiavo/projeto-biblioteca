@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('tituloGuia')
+    Lista Pessoas
+@endsection
+
 @section('titulo')
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 pt-3 pb-3" href="/lista-pessoas">Lista Pessoas</a>
 @endsection
@@ -23,7 +27,7 @@
                 <th scope="col">Endereço</th>
                 <th scope="col">Telefone</th>
                 <th scope="col">Email</th>
-                <th scope="col"></th>
+                <th class="text-end" scope="col">Excluir</th>
             </tr>
         </thead>
         <tbody>

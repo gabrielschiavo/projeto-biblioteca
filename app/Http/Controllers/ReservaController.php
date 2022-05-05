@@ -1,6 +1,8 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Models\Livros;
+use App\Models\Pessoa;
 use App\Models\Reserva;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
@@ -23,15 +25,24 @@ class ReservaController extends Controller
 
     public function cadastroReservas()
     {
-        return view('cadastro-reservas');
+        $listaPessoas = Pessoa::all();
+        $listaLivros = Livros::all();
+        return view('cadastro-reservas', [
+            'listaPessoas' => $listaPessoas,
+            'listaLivros' => $listaLivros
+        ]);
     }
 
     public function editar(Request $request)
     {
         $reservas = Reserva::find($request->id);
+        $listaPessoas = Pessoa::all();
+        $listaLivros = Livros::all();
 
         return view('cadastro-reservas', [
-            "reservas" => $reservas
+            "reservas" => $reservas,
+            'listaPessoas' => $listaPessoas,
+            'listaLivros' => $listaLivros
         ]);
     }
 

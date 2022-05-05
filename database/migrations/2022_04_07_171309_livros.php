@@ -9,7 +9,7 @@ return new class extends Migration
     {
         Schema::create('livros', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('codigoGenero');
+            $table->integer('codigoGenero')->unsigned();
             $table->integer('codigoLivro');
             $table->string('titulo', 250);
             $table->string('descricao', 250);

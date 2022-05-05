@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Models\Genero;
 use App\Models\Livros;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
@@ -24,7 +25,10 @@ class LivrosController extends Controller
 
     public function cadastroLivros()
     {
-        return view('cadastro-livros');
+        $listaGenero = Genero::all();
+        return view('cadastro-livros', [
+            'listaGenero' => $listaGenero
+        ]);
     }
 
     public function excluir(Request $request)
