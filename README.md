@@ -1,11 +1,9 @@
-## Projeto Biblioteca - Trabalho Programação WEB III
+# Projeto Biblioteca - Trabalho Programação WEB III
 <p align="left">
-<img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/>
 </p>
 
 Este projeto visa controla o cadastro dos livros e empréstimos.
-
-* Criar um rodapé fixo com o nome completo dos integrantes
 
 * **Gênero** (código, descrição) deverá ter uma tela para listar os gêneros, para cadastrar e botão para excluir.
 
@@ -15,6 +13,21 @@ Este projeto visa controla o cadastro dos livros e empréstimos.
 
 * **Retirada/Devolução de Livros** (codigo, data_retirada, data_entrega, pessoa_retirada, livro_retirado)
 
-## Frameworks/Ferramentas utilizadas
+## :hammer: Funcionalidades do projeto
+- `Cadastro de livros`: cadastro dos livros com titulo, descrição e imagem da capa.
+- `Cadastro de pessoa`: cadastro de pessoa com nome, endereço, telefone e e-mail.
+- `Cadastro da retirada e devolução`: cadastro da data dde retirada, data de entrega, pessoa que retirou o livro e o livro retirado.
+- `Cadastro de gênero do livro`: cadastro de descrição do gênero do livro.
 
-<p align="left"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## :file_folder: Acesso ao projeto
+Você pode [acessar o código fonte do projeto](https://github.com/GabrielSchiavo/projeto-biblioteca) ou [baixá-lo](https://github.com/GabrielSchiavo/projeto-biblioteca/archive/refs/heads/main.zip).
+
+## 	:hammer_and_wrench: Abrir e rodar o projeto
+
+
+## Tecnologias utilizadas
+* `Laravel - 9.3.0`
+* `Composer - 2.2.6`
+* `MySQL`
+* `PHP - 8.1.2`
+* `Bootstrap - 5.1.3`
