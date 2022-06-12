@@ -3,7 +3,7 @@
     <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/>
 </p>
 
-Este projeto visa controla o cadastro dos livros e empréstimos.
+Este projeto visa controlar o cadastro dos livros e empréstimos de uma biblioteca.
 
 * `Gênero:` (código, descrição) deverá ter uma tela para listar os gêneros, para cadastrar e botão para excluir.
 
