@@ -11,12 +11,12 @@ Este projeto visa controlar o cadastro dos livros e empréstimos de uma bibliote
 
 * `Pessoa:` (código, nome, endereço, telefone, e-mail) deverá ter uma tela para listar as pessoas, para cadastrar e botão para excluir
 
-* `Retirada/Devolução de Livros:` (codigo, data_retirada, data_entrega, pessoa_retirada, livro_retirado)
+* `Retirada/Devolução de Livros:` (código, data_retirada, data_entrega, pessoa_retirada, livro_retirado)
 
 ## :hammer: Funcionalidades do projeto
-- `Cadastro de livros`: cadastro dos livros com titulo, descrição e imagem da capa.
+- `Cadastro de livros`: cadastro dos livros com título, descrição e imagem da capa.
 - `Cadastro de pessoa`: cadastro de pessoa com nome, endereço, telefone e e-mail.
-- `Cadastro da retirada e devolução`: cadastro da data dde retirada, data de entrega, pessoa que retirou o livro e o livro retirado.
+- `Cadastro da retirada e devolução`: cadastro da data de retirada, data de entrega, pessoa que retirou o livro e o livro retirado.
 - `Cadastro de gênero do livro`: cadastro de descrição do gênero do livro.
 
 
@@ -27,7 +27,7 @@ Este projeto visa controlar o cadastro dos livros e empréstimos de uma bibliote
 Você pode [acessar o código fonte do projeto](https://github.com/GabrielSchiavo/projeto-biblioteca) ou [baixá-lo](https://github.com/GabrielSchiavo/projeto-biblioteca/archive/refs/heads/main.zip).
 
 ## 	:hammer_and_wrench: Abrir e rodar o projeto
-Após baixar o projeto, você pode abrir com o Visual Studio Code. Para o projeto funcionar você dever ter configurado em seu PC:
+Após baixar o projeto, você pode abrir com o Visual Studio Code. Para o projeto funcionar você deve ter configurado em seu PC:
 * PHP - Versão >=8.1.2
 * Composer - Versão >=2.2.6
 * Banco de Dados MySQL
