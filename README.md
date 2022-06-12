@@ -25,7 +25,7 @@ Você pode [acessar o código fonte do projeto](https://github.com/GabrielSchiav
 ## 	:hammer_and_wrench: Abrir e rodar o projeto
 
 
-## Tecnologias utilizadas
+## :heavy_check_mark: Tecnologias utilizadas
 * `Laravel - 9.3.0`
 * `Composer - 2.2.6`
 * `MySQL`
