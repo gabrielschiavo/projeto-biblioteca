@@ -5,13 +5,13 @@
 
 Este projeto visa controla o cadastro dos livros e empréstimos.
 
-* `**Gênero:**` (código, descrição) deverá ter uma tela para listar os gêneros, para cadastrar e botão para excluir.
+* `Gênero:` (código, descrição) deverá ter uma tela para listar os gêneros, para cadastrar e botão para excluir.
 
-* **Livros** (código, cod_genero, titulo, descrição, imagem da capa) deverá ter uma tela para listar os livros, para cadastrar e botão para excluir
+* `Livros:` (código, cod_genero, titulo, descrição, imagem da capa) deverá ter uma tela para listar os livros, para cadastrar e botão para excluir
 
-* **Pessoa** (código, nome, endereço, telefone, e-mail) deverá ter uma tela para listar as pessoas, para cadastrar e botão para excluir
+* `Pessoa:` (código, nome, endereço, telefone, e-mail) deverá ter uma tela para listar as pessoas, para cadastrar e botão para excluir
 
-* **Retirada/Devolução de Livros** (codigo, data_retirada, data_entrega, pessoa_retirada, livro_retirado)
+* `Retirada/Devolução de Livros:` (codigo, data_retirada, data_entrega, pessoa_retirada, livro_retirado)
 
 ## :hammer: Funcionalidades do projeto
 - `Cadastro de livros`: cadastro dos livros com titulo, descrição e imagem da capa.
