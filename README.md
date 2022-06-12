@@ -23,7 +23,15 @@ Este projeto visa controla o cadastro dos livros e empréstimos.
 Você pode [acessar o código fonte do projeto](https://github.com/GabrielSchiavo/projeto-biblioteca) ou [baixá-lo](https://github.com/GabrielSchiavo/projeto-biblioteca/archive/refs/heads/main.zip).
 
 ## 	:hammer_and_wrench: Abrir e rodar o projeto
-
+Após baixar o projeto, você pode abrir com o Visual Studio Code. Para o projeto funcionar você dever ter configurado em seu PC:
+* PHP versão >=8.1.2
+* Composer versão >=2.2.6
+* Banco de Dados MySQL
+Após configurar todas essas ferramentas, abra o arquivo .env, localizado na raiz do projeto e altere as configurações de "DB_CONNECTION" para as configurações do seu MySQL. Exclua a pasta "storage", localizada em /public. Depois abra um terminal na raiz do projeto e execute os seguintes comandos:
+* php artisan migrate
+* php artisan storage:link
+Agora o projeto está pronto para ser iniciado. Para isso execute no terminal o seguinte comando:
+* php artisan serve
 
 ## :heavy_check_mark: Tecnologias utilizadas
 * `Laravel - 9.3.0`
@@ -31,3 +39,4 @@ Você pode [acessar o código fonte do projeto](https://github.com/GabrielSchiav
 * `MySQL`
 * `PHP - 8.1.2`
 * `Bootstrap - 5.1.3`
+* `UIkit - 3.13.7`
