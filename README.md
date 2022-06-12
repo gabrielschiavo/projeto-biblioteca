@@ -5,7 +5,7 @@
 
 Este projeto visa controla o cadastro dos livros e empréstimos.
 
-* `Gênero` (código, descrição) deverá ter uma tela para listar os gêneros, para cadastrar e botão para excluir.
+* `**Gênero:**` (código, descrição) deverá ter uma tela para listar os gêneros, para cadastrar e botão para excluir.
 
 * **Livros** (código, cod_genero, titulo, descrição, imagem da capa) deverá ter uma tela para listar os livros, para cadastrar e botão para excluir
 
