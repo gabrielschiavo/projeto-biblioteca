@@ -1,4 +1,8 @@
 ## Projeto Biblioteca - Trabalho Programação WEB III
+<p align="center">
+<img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/>
+</p>
+
 Este projeto visa controla o cadastro dos livros e empréstimos.
 
 * Criar um rodapé fixo com o nome completo dos integrantes
