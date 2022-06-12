@@ -24,8 +24,8 @@ Você pode [acessar o código fonte do projeto](https://github.com/GabrielSchiav
 
 ## 	:hammer_and_wrench: Abrir e rodar o projeto
 Após baixar o projeto, você pode abrir com o Visual Studio Code. Para o projeto funcionar você dever ter configurado em seu PC:
-* PHP versão >=8.1.2
-* Composer versão >=2.2.6
+* PHP - Versão >=8.1.2
+* Composer - Versão >=2.2.6
 * Banco de Dados MySQL
 
 Após configurar todas essas ferramentas, abra o arquivo .env, localizado na raiz do projeto e altere as configurações de "DB_CONNECTION" para as configurações do seu MySQL. Exclua a pasta "storage", localizada em /public. Depois abra um terminal na raiz do projeto e execute os seguintes comandos:
