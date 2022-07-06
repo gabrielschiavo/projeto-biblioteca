@@ -1,7 +1,7 @@
 # Projeto Biblioteca - Trabalho Programação WEB III
 <p align="left">
     <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/>
-    <img src="https://img.shields.io/github/license/GabrielSchiavo/projeto-biblioteca?style=for-the-badge"/>
+    <img src="https://img.shields.io/github/license/GabrielSchiavo/projeto-biblioteca?color=blue&style=for-the-badge"/>
 </p>
 
 Este projeto visa controlar o cadastro dos livros e empréstimos de uma biblioteca.
