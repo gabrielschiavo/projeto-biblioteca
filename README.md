@@ -25,7 +25,7 @@ Este projeto visa controlar o cadastro dos livros e empréstimos de uma bibliote
 
 
 ## :file_folder: Acesso ao projeto
-Você pode [acessar o código fonte do projeto](https://github.com/GabrielSchiavo/projeto-biblioteca) ou [baixá-lo](https://github.com/GabrielSchiavo/projeto-biblioteca/archive/refs/heads/main.zip).
+Você pode [acessar o código-fonte do projeto](https://github.com/GabrielSchiavo/projeto-biblioteca) ou [baixá-lo](https://github.com/GabrielSchiavo/projeto-biblioteca/archive/refs/heads/main.zip).
 
 ## 	:hammer_and_wrench: Abrir e rodar o projeto
 Após baixar o projeto, você pode abrir com o Visual Studio Code. Para o projeto funcionar você deve ter configurado em seu PC:
