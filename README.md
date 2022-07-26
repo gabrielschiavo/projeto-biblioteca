@@ -20,9 +20,8 @@ Este projeto visa controlar o cadastro dos livros e empréstimos de uma bibliote
 - `Cadastro da retirada e devolução`: cadastro da data de retirada, data de entrega, pessoa que retirou o livro e o livro retirado.
 - `Cadastro de gênero do livro`: cadastro de descrição do gênero do livro.
 
-
-![Tela inicial do projeto](https://user-images.githubusercontent.com/84607831/173244774-e45a690b-8768-4c86-b42b-145d25b158f8.jpg)
-
+<br>
+<img src="./public/img/screenshots/screenshot1_tela_inicial.jpg" alt="Screenshot tela inicial"/>
 
 ## :file_folder: Acesso ao projeto
 Você pode [acessar o código-fonte do projeto](https://github.com/GabrielSchiavo/projeto-biblioteca) ou [baixá-lo](https://github.com/GabrielSchiavo/projeto-biblioteca/archive/refs/heads/main.zip).
