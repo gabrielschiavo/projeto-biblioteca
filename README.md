@@ -45,9 +45,9 @@ Agora o projeto está pronto para ser iniciado. Para isso execute no terminal o 
 * php artisan serve
 
 ## :white_check_mark: Tecnologias utilizadas
-* `Laravel - 9.3.0`
-* `Composer - 2.2.6`
-* `MySQL`
-* `PHP - 8.1.3`
 * `Bootstrap - 5.1.3`
+* `Composer - 2.2.6`
+* `Laravel - 9.3.0`
+* `MySQL Database`
+* `PHP - 8.1.3`
 * `UIkit - 3.13.7`
