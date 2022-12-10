@@ -15,10 +15,10 @@ Este projeto visa controlar o cadastro dos livros e empréstimos de uma bibliote
 * `Retirada/Devolução de Livros:` (código, data_retirada, data_entrega, pessoa_retirada, livro_retirado)
 
 ## :hammer: Funcionalidades do projeto
-- `Cadastro de livros`: cadastro dos livros com título, descrição e imagem da capa.
-- `Cadastro de pessoa`: cadastro de pessoa com nome, endereço, telefone e e-mail.
-- `Cadastro da retirada e devolução`: cadastro da data de retirada, data de entrega, pessoa que retirou o livro e o livro retirado.
-- `Cadastro de gênero do livro`: cadastro de descrição do gênero do livro.
+- `Cadastro de livros:` cadastro dos livros com título, descrição e imagem da capa.
+- `Cadastro de pessoa:` cadastro de pessoa com nome, endereço, telefone e e-mail.
+- `Cadastro da retirada e devolução:` cadastro da data de retirada, data de entrega, pessoa que retirou o livro e o livro retirado.
+- `Cadastro de gênero do livro:` cadastro de descrição do gênero do livro.
 
 <br>
 <img src="./public/img/screenshots/screenshot1_tela_inicial.jpg" alt="Screenshot tela inicial"/>
@@ -36,13 +36,17 @@ Após baixar o projeto, você pode abrir com o Visual Studio Code. Para o projet
 Na pasta de instalação do PHP edite o arquivo "php.ini", neste arquivo descomente a linha que diz "extension=fileinfo" removendo o ";" da frente.
 
 Após configurar todas essas ferramentas, abra o arquivo .env, localizado na raiz do projeto e altere as configurações de "DB_CONNECTION" para as configurações do seu MySQL. Exclua a pasta "storage", localizada em /public. Depois abra um terminal na raiz do projeto e execute os seguintes comandos:
-
-* php artisan migrate
-* php artisan storage:link
+```bash
+php artisan migrate
+```
+```bash
+php artisan storage:link
+```
 
 Agora o projeto está pronto para ser iniciado. Para isso execute no terminal o seguinte comando:
-
-* php artisan serve
+```bash
+php artisan serve
+```
 
 ## :white_check_mark: Tecnologias utilizadas
 * `Bootstrap - 5.1.3`
